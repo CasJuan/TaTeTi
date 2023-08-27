@@ -1,17 +1,19 @@
 :root{
     --color-principal:rgb(61, 1, 75);
     --line-style: 10px solid var(--color-principal);
+    --font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
     user-select: none;
+    background-color: rgba(181, 181, 181, 0.837);
 }
 
 
 h1{
     text-align: center;
     font-size: 4rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--font-family);
     color: var(--color-principal);
 }
 
@@ -44,4 +46,31 @@ h1{
 
 .abajo{
     border-top: var(--line-style);
+}
+
+.ganador{
+    background-color: green;
+}
+
+dialog{
+    text-align: center;
+    min-width: 50vw;
+    background-color: rgba(240, 248, 255, 0.23);
+    padding: 5rem;
+    border: unset;
+    border-radius: 10px;
+}
+
+dialog h2{
+    font-family: var(--font-family);
+    font-size: xx-large;
+}
+
+dialog button{
+    padding: 1rem;
+    font-size: large;
+}
+
+dialog::backdrop{
+    backdrop-filter: blur(3px);
 }
